@@ -3,6 +3,8 @@ var GenPass = (function(){
 	function GenPass(container){
 		this.container = container;
 	};
+	GenPass.prototype.length = 8;
+	GenPass.prototype.count = 8;
 	GenPass.prototype.set = [
 		//記号
 		//'!','"','#','$','%','&','\'','(',')','*','+',',','-','.','/',':',';','<','=','>','?','@','{','|','}','~','[','\\',']','^','_','`',
@@ -14,9 +16,9 @@ var GenPass = (function(){
 		'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'
 	];
 	GenPass.prototype.gen = function(){
-		for(var i = 0; i < 8; i++){
+		for(var i = 0; i < GenPass.prototype.count; i++){
 			var pass = "";
-			for(var j = 0; j < 8; j++){
+			for(var j = 0; j < GenPass.prototype.length; j++){
 				pass += ""+this.set[Math.floor(Math.random() * this.set.length)];
 			}
 			this.container.append("<input value='"
