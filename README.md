@@ -11,6 +11,10 @@ git clone https://github.com/sys1yagi/genpass_chrome_extensions.git
 Chromeの、
 [ウィンドウ]-[拡張機能]-[パッケージ化されていない拡張機能を読み込む]
 でcloneしたディレクトリを選択して下さい。
+動かすとこんな感じになります。
+
+![Alt cap](/doc/cap.png)
+
 
 ## custom
 
@@ -18,7 +22,8 @@ Chromeの、
 
 ### パスに含める文字定義
 
-この辺いじったらええで
+この辺いじったらええで。
+デフォでは記号は除外してます。
 <pre>
 	GenPass.prototype.set = [
 		//記号
@@ -33,6 +38,8 @@ Chromeの、
 </pre>
 
 ### 文字数
+
+デフォは8文字。
 
 <pre>
 GenPass.prototype.length = 8;
