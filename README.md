@@ -1,4 +1,3 @@
-
 # genpass
 
 メール添付のzipとか使い捨てのパスを生成するChrome Extensionsです。
@@ -6,7 +5,7 @@
 ## install
 
 <pre>
-git clone …
+git clone https://github.com/sys1yagi/genpass_chrome_extensions.git
 </pre>
 
 Chromeの、
